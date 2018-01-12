@@ -45,7 +45,7 @@ button{
 }
 .right{
   display: flex;
-  align-items:center;/*注意这两个写一起才生效*/
+  align-items:center;
 }
 .right .btn{
   box-sizing: border-box;
@@ -145,7 +145,7 @@ button{
   transform: rotate(45deg);
 }
 #arrow-bottom:hover{
-  cursor: hand;/*1.悬浮没实现*/
+  cursor: hand;
 }
 
 /*遮罩层的样式*/
@@ -214,7 +214,6 @@ button{
   padding-left: 5px;
   font-size: 52px;
   color: #fcf9f4;
-  /*font-family: 'Amatica SC',cursive;*/
   font-family:myFirstFont;
 }
 .item3-info,.item4-info,.item5-info{
@@ -267,7 +266,7 @@ li{
   flex-direction: row;
 }
 .square-data{
-  display: flex;/*用inline-block代替浮动*/
+  display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #eeece7;
