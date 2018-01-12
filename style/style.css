@@ -1,0 +1,314 @@
+
+@font-face
+{
+  font-family: myFirstFont;
+  src: url('../../webSite/font/Amaticsc.ttf');
+}
+
+/*清除默认样式*/
+*{
+  margin: 0;
+  padding: 0;
+}
+button{
+  border:0;
+  background-color:transparent;
+}
+/*标题组*/
+.site{
+  background-color: #80a8cc;
+}
+.medium a{
+  display: inline-block;
+  text-decoration: none;
+  color:grey;/*改颜色*/
+  margin-right: 42px;
+  height: 100px;
+  line-height: 100px;
+}
+.nav{
+  background-color: #fcf9f4;
+  width: 1600px;
+  height: 100px;
+  display:flex;
+}
+
+.left,.right{
+  flex-grow:1;
+}
+.medium{
+  padding: 0 42px;
+  border-left:1px solid #eae7e2;
+  border-right:1px solid #eae7e2;
+  text-align: center;
+  vertical-align: middle;
+}
+.right{
+  display: flex;
+  align-items:center;/*注意这两个写一起才生效*/
+}
+.right .btn{
+  box-sizing: border-box;
+  border: 1px solid #dad7d2;
+  border-radius: 5px;
+  margin-left: 42px;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color:#4d4e59;
+  font-weight: bold;
+}
+.logo{
+  width: 120px;
+  height: 100px;
+}
+.left{
+  position: relative;
+}
+.left .logo{
+  position: absolute;
+  top:0;
+  right: 0;
+}
+.logo{
+  margin-right: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-logo{
+  width: 120px;
+  height: 65px;
+  display: inline-block;
+  background-image:url('../../webSite/images/logo.png') ;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 120px 65px;/*设置背景图片尺寸*/
+}
+
+/*内容组*/
+.content{
+  width: 100%;
+}
+.item1{
+  position: relative;
+  width: 1600px;
+  height: 794px;
+  background-image:url('../../webSite/images/hero.png') ;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 1600px 794px;/*设置背景图片尺寸*/
+}
+.item1,.item2{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+.item1-content{
+  padding-top: 300px;
+  padding-bottom: 50px;
+  color:#ffffff;
+  font-size:60px;
+  font-family: myFirstFont;
+}
+.itme1-btn1,.itme1-btn2,.item2-btn,.item3-btn,.item4-btn,.item5-btn{
+  border-radius: 5px;
+  height: 60px;
+  width: 270px;
+  font-size: 24px;
+  font-family: 'Amatica SC',cursive;
+}
+.itme1-btn1{
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  margin-right: 30px;
+  background: transparent;
+}
+.itme1-btn2{
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+.itme1-btn1,.itme1-btn2{
+  font-family: myFirstFont;
+}
+#arrow-bottom {
+  position: absolute;
+  bottom:24px;
+  display: inline-block;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+}
+#arrow-bottom:hover{
+  cursor: hand;/*1.悬浮没实现*/
+}
+
+/*遮罩层的样式*/
+.mask{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  background: rgba(255,255,255,0.2);
+}
+/*第2张图片*/
+.item2{
+  background-color: #fff;
+}
+.item2-content .title{
+  padding-top: 150px;
+  color: #4d4e59;
+}
+.item2-content .title,.item6-title{
+  text-align: center;
+  font-size: 52px;
+  /*font-family: 'Amatica SC',cursive;*/
+  font-family:myFirstFont;
+}
+.item2-content .info{
+  padding: 32px 0;
+  width: 801px;
+  font-size: 23px;
+  font-family: 'Open Sans';
+  color: #636471;
+  text-align: center;
+}
+.item2-btn{
+  margin-bottom: 200px;
+  background-color: #ffcd62;
+  font-family: 'Open Sans';
+  color:#636471;
+}
+
+/*第三张图的样式*/
+.item3{
+  background-color: #91d0b1;
+}
+.item3,.item5{
+  height: 700px;
+  padding-top: 170px;
+  display: flex;
+  flex-flow: row;
+}
+.item3-pic,.item5-pic{
+  padding-left: 312px;
+  padding-right: 138px;
+}
+.item3-pic img,.item4-pic img,.item5-pic img{
+  height: 330px;
+  width: 330px;
+}
+.item3 .item3-whiteSpace{
+  flex:0 0 300px;/*针对每个项目单独设置*/
+}
+.item5 .item5-whiteSpace{
+  flex:0 0 265px;
+}
+.item3-content .item3-title,.item4-content .item4-title,.item5-content .item5-title{
+  padding-left: 5px;
+  font-size: 52px;
+  color: #fcf9f4;
+  /*font-family: 'Amatica SC',cursive;*/
+  font-family:myFirstFont;
+}
+.item3-info,.item4-info,.item5-info{
+  padding: 32px 0;
+  font-size: 22px;
+  color: #fcf9f4;
+  font-family: 'Open Sans';
+}
+.item3-btn,.item4-btn,.item5-btn{
+  font-family: 'Open Sans';
+  font-size: 20px;
+  color: #fcf9f4;
+  background-color: rgba(0,0,0,0.1);
+}
+
+/*第四张图样式*/
+.item4{
+  background-color: #ffcd62;
+  height: 700px;
+  padding-top: 170px;
+  display: flex;
+  flex-flow: row;
+}
+.item4-content{
+  padding-left: 312px;
+}
+.item4-pic{
+  padding-left: 110px;
+  padding-right: 286px;
+}
+.item5{
+  background-color: #80a8cc;
+}
+.item6{
+  background-color: #fcf9f4;
+  height: 840px;
+  padding: 0 218px;
+}
+.item6-title{
+  padding-top: 170px;
+  padding-bottom: 80px;
+  color: #909094;
+}
+/*第6张图样式*/
+li{
+  list-style-type: none;
+}
+.item6 ul{
+  display: flex;
+  flex-direction: row;
+}
+.square-data{
+  display: flex;/*用inline-block代替浮动*/
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eeece7;
+  border-radius: 5px;
+  margin-right: 30px;
+  height: 350px;
+  width: 338px;
+}
+.item6 li:last-child{
+  margin: 0;
+}
+.square-data .num1{
+  font-size: 72px;
+  text-align: center;
+}
+.square-data-content{
+  font-family: 'Amatica SC',cursive;
+}
+.square-data-content .num1{
+  font-family: 'Amatica SC',cursive;
+  padding-bottom: 55px;
+}
+.square-data-content .des1{
+  font-size: 20px;
+  text-align: center;
+}
+#sd1{
+  color: #91d0b1;
+}
+#sd2{
+  color: #ffcd62;
+}
+#sd3{
+  color: #80a8cc;
+}
+
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4d4e59;
+  height: 100px;
+  color: #d4d2d0;
+}
